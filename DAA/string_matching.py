@@ -1,4 +1,4 @@
-text="Prasad Chaudhari"
+text="Jaykumar Chaudhari"
 pat="ari"
 n=len(text)
 m=len(pat)
