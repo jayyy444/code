@@ -22,15 +22,13 @@ while len(visited) < len(graph):
         break
 
     visited.add(min_node)
-    #print()
-    # print(visited)
-    # print(min_node)
+    
     
     for neighbor, weight in graph[min_node]:
         new_distance = distances[min_node]+ weight
         if new_distance < distances[neighbor]:
             distances[neighbor] = new_distance
-            #print(distance)
+            
 
 print()
 for node, dist in distances.items():
