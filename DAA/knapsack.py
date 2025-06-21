@@ -1,10 +1,8 @@
-#program related to index:
+
 def knapsack(wt, profit, cap):
     items=[(i, wt[i], profit[i], wt[i]/profit[i] )for i in range(len(wt))]
     items.sort(key=lambda x:x[0], reverse =True)
-    # items.sort(key=lambda x:x[1]) for smallest weight
-    # items.sort(key=lambda x:x[2], reverse =True ) for largest profit
-    # items.sort(key=lambda x:x[2], reverse =True ) for largest wt/profit ratio
+   
 
     total_profit =0
     include_items = []
