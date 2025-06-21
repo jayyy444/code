@@ -17,7 +17,7 @@ def graph_coloring_util(graph, m, color, node):
             color[node] = 0  # Backtrack
     return False
 
-# Main function to start graph coloring
+# Main function 
 def graph_coloring(graph, m):
     color = [0] * len(graph)
     if not graph_coloring_util(graph, m, color, 0):
@@ -34,5 +34,5 @@ graph = [
     [1, 0, 1, 0]
 ]
 
-m = 3  # Number of colors
+m = 3  
 graph_coloring(graph, m)
