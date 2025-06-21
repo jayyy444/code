@@ -1,8 +1,4 @@
-# Name: Prasad Mahesh Chaudhari
-# Roll No: 10
-# Batch: S1
 
-# Kruskal's Algorithm Implementation
 
 def find(parent, v):
     if parent[v] != v:
@@ -28,8 +24,6 @@ graph = {
     'C': [('A', 4), ('B', 2), ('D', 1)],
     'D': [('B', 5), ('C', 1)]
 }
-# Edges Are: 
-#  [(1, 'A', 'B'), (1, 'B', 'A'), (1, 'C', 'D'), (1, 'D', 'C'), (2, 'B', 'C'), (2, 'C', 'B'), (4, 'A', 'C'), (4, 'C', 'A'), (5, 'B', 'D'), (5, 'D', 'B')]
 
 # Main execution
 tot_cost = 0
