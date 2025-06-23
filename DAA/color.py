@@ -1,4 +1,4 @@
-# Function to check if the current color assignment is safe
+
 def is_safe(node, graph, color, c):
     for neighbor in range(len(graph)):
         if graph[node][neighbor] == 1 and color[neighbor] == c:
@@ -7,17 +7,17 @@ def is_safe(node, graph, color, c):
 
 def graph_coloring_util(graph, m, color, node):
     if node == len(graph):
-        return True  #All vertices are assigned a color
+        return True  
 
     for c in range(1, m + 1):
         if is_safe(node, graph, color, c):
             color[node] = c
             if graph_coloring_util(graph, m, color, node + 1):
                 return True
-            color[node] = 0  # Backtrack
+            color[node] = 0  
     return False
 
-# Main function 
+ 
 def graph_coloring(graph, m):
     color = [0] * len(graph)
     if not graph_coloring_util(graph, m, color, 0):
