@@ -13,22 +13,22 @@ def quick(arr):
     return quick(left) + mid + quick(right)
 
 def calc_time(n, arr):
-    #Average Case Time
+    
     start = time.time()
     quick(arr)
     avg_time = time.time() - start
 
-    #Best Case Time
+    
     start = time.time()
     quick(sorted(arr))
     best_time = time.time() - start
 
-    #Worst Case time
+    
     start = time.time()
     quick(sorted(arr, reverse=True))
     worst_time = time.time() - start
 
-    return n, best_time, avg_time, worst_time  # Ensure return values
+    return n, best_time, avg_time, worst_time  
 
 user_ip = [random.randint(1,10000) for _ in range (10)]
 print("n\tbest_time\t avg_time\t worst_time")
