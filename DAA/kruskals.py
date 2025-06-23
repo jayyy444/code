@@ -17,7 +17,7 @@ def kruskal(graph):
 
     return mst
 
-# Graph definition
+
 graph = {
     'A': [('B', 1), ('C', 4)],
     'B': [('A', 1), ('C', 2), ('D', 5)],
@@ -25,7 +25,7 @@ graph = {
     'D': [('B', 5), ('C', 1)]
 }
 
-# Main execution
+
 tot_cost = 0
 span_tree = kruskal(graph)
 
