@@ -10,7 +10,7 @@ graph = [
 for k in range(V):
     for i in range(V):
         for j in range(V):
-            if graph[i][k] + graph[k][j] < graph[i][j]:  # if shorter path found
+            if graph[i][k] + graph[k][j] < graph[i][j]:  
                 graph[i][j] = graph[i][k] + graph[k][j]
 
 print("The all pair shortest paths are")
